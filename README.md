@@ -14,7 +14,13 @@ Globals and word-based
 
 Functions
 
-* f → function |(|) {}
+* f → function () {}
+* sif → Self invoked function ;(function () {}());
+* sifs → Same, but strict thing ;(function () {'use strict';}());
+
+Loops
+
+* for → loop with predefined index and array
 
 Logging (can be used from command palette to wrap javascript expression)
 
