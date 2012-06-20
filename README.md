@@ -6,25 +6,88 @@ A bunch of snippets for lightning-like javascripting
 
 Globals and word-based
 
-* w → window
-* d → document
-* a → arguments
-* l → location
-* q → querySelectorAll('')
+```javascript
+// a
+arguments
+
+// de
+debugger;
+
+// d
+document
+
+// l
+location
+
+// q
+querySelectorAll('')
+
+// w
+window
+```
 
 Functions
 
-* f → function () {}
-* sif → Self invoked function ;(function () {}());
-* sifs → Same, but strict thing ;(function () {'use strict';}());
+```javascript
+// f
+function () {} // lots of tabstops, wraps selected text
+
+// sif
+;(function () {
+	// wraps selected text
+}());
+
+// sifs
+;(function () {
+	'use strict';
+
+	// wraps selected text
+}());
+```
 
 Loops
 
-* for → loop with predefined index and array
+```javascript
+// for
+for (i = 0; i < arr.length; i += 1) {
+	arr[i]
+} // arr and i changable
+```
 
-Logging (can be used from command palette to wrap javascript expression)
+Timers
+```javascript
+// set
+setTimeout(function () {}, 50);  // or
+setInterval(function () {}, 50); // replace T with I while typing,
+								 // and text will dynamically changed
 
-* cl → console.log();
-* cw → console.warn();
-* ci → console.info();
-* ct → console.timeStamp('');
+// clr
+clearTimeout();
+clearInterval();
+```
+
+Logging
+
+```javascript
+// cl
+console.log(); // wraps selected text
+
+// cw
+console.warn(); // wraps selected text
+
+// ci
+console.info(); // wraps selected text
+
+// ct
+console.timeStamp('');
+```
+
+Ohers
+
+```javascript
+// '
+' + + ' // nice tool for string incuting
+
+// if
+if () {} // several tabstops
+```
